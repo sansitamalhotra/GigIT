@@ -7,7 +7,6 @@ from app.services.fraud_detection_service import assess_fraud_risk
 import PyPDF2
 import io
 from PIL import Image
-from flask import jsonify
 from fastapi.responses import JSONResponse
 from http import HTTPStatus # Optional, but good practice
 

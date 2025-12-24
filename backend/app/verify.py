@@ -7,7 +7,6 @@ import PyPDF2
 import io
 from PIL import Image
 from fastapi.middleware.cors import CORSMiddleware
-from flask import jsonify, make_response
 
 app = FastAPI()
 origins = [
