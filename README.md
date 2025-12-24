@@ -1,59 +1,156 @@
-# GigIT.
+# GigIT 🚀  
+**Fast-track freelancer verification with AI-powered document analysis**
 
-Fast-track freelancer verification with AI-powered document analysis
-
----
-
-## About
-**GigIT** is a backend API designed to help banks verify freelancers quickly using their tax forms (e.g., 1099). Users submit their documents, and our API analyzes them using **Gemini 2.5 Pro** to produce a verification report. Underwriters then review the report, significantly reducing the time it takes for freelancers to get approved.
-
----
-
-## Inspiration
-We noticed that freelancers often face delays in getting verified by banks because standard verification processes are slow and require manual review of tax documents. We wanted to create a solution that leverages **AI** to automate document analysis and speed up verification, making banking more accessible for freelancers.
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
 
-## What it does
-- Users submit their tax documents (e.g., 1099 forms) to the API.  
-- The API analyzes the documents using **Gemini 2.5 Pro** to extract relevant information.  
-- A verification report is generated and sent to the bank.  
-- Underwriters review the report for final approval.  
-- Reduces verification time from days to hours.
+## ✨ About GigIT
+
+**GigIT** is an AI-powered verification platform designed to help banks 
+and financial institutions **verify freelancers faster and more 
+accurately** using their tax documents (such as 1099 forms).
+
+Instead of slow, manual document reviews, GigIT uses modern AI techniques 
+to extract and analyze relevant information, producing a structured 
+verification report for underwriters to review.
+
+This significantly reduces verification time **from days to hours**.
 
 ---
 
-## How we built it
-- **Backend:** FastAPI  
-- **File processing:** Python, PyPDF2 for PDFs, image handling for scanned documents  
-- **AI:** Google Gemini 2.5 Pro for generative document analysis  
-- **Testing:** Postman / curl for API endpoint testing  
-- **Deployment:** Local server with Uvicorn  
+## 💡 Inspiration
+
+Freelancers often face long delays when applying for financial products 
+because traditional verification systems are built for salaried employees.
+
+GigIT was created to:
+- Reduce manual document review
+- Speed up freelancer verification
+- Make banking systems more inclusive for independent workers
 
 ---
 
-## Accomplishments 
-- Built a fully functional **document processing API** from scratch  
-- Integrated generative AI to automatically analyze and produce verification reports  
-- Created a solution specifically for **freelancers**, a group often overlooked in traditional banking systems  
+## ⚙️ What It Does
 
----
-## Next Steps
-- Expand AI capabilities to handle more document types and international forms  
-- Add a frontend dashboard for users and banks to track verification status  
-- Implement authentication and security for sensitive document handling  
-- Optimize AI processing for faster response times
-
----
-## License / Access
-This repository is view-only. All rights reserved by Jemima Silaen, Vriti Dahiya, Sansita Malhotra. No copying, redistribution, or derivative works are permitted without prior written consent. See LICENSE for details.
+- Users upload freelancer tax documents (e.g. 1099 forms)
+- The backend processes PDFs or scanned images
+- AI extracts and analyzes relevant financial information
+- A verification report is generated for underwriters
+- Banks make faster, more informed decisions
 
 ---
 
-## How to Test Locally
-1. Clone the repository  
+## 🛠 How It Was Built
+
+### Backend
+- **FastAPI** (Python)
+- PDF processing with **PyPDF2**
+- Image handling for scanned documents
+- AI analysis using **Google Gemini**
+- API testing with **Postman / curl**
+- Local deployment with **Uvicorn**
+
+### Frontend
+- **React**
+- Modular page & component structure
+- Mock data for local development and demos
+
+---
+
+## 🧪 How to Run Locally
+
+### 1️⃣ Clone the repository
 ```bash
-git clone <repo-url>
+git clone https://github.com/sansitamalhotra/GigIT.git
+cd GigIT
+2️⃣ Run the Backend
+bash
+Copy code
 cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install fastapi uvicorn python-multipart python-dotenv pillow PyPDF2 
+google-generativeai
+Create a local .env file (this is not committed):
 
+bash
+Copy code
+touch app/.env
+Example .env:
 
+env
+Copy code
+GEMINI_API_KEY=""
+Start the server:
+
+bash
+Copy code
+uvicorn app.main:app --reload
+Open API docs:
+
+arduino
+Copy code
+http://127.0.0.1:8000/docs
+3️⃣ Run the Frontend
+Open a new terminal:
+
+bash
+Copy code
+cd frontend
+npm install
+npm start
+Frontend runs at:
+
+arduino
+Copy code
+http://localhost:3000
+The frontend can run independently using mock data if no API key is 
+provided.
+
+📂 Project Structure
+text
+Copy code
+GigIT/
+├── backend/
+│   ├── app/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   └── main.py
+│   └── tests/
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── subpages/
+│   │   ├── services/
+│   │   └── test_data/
+└── README.md
+🏆 Accomplishments
+Built a fully functional document-processing API from scratch
+
+Integrated AI-based document analysis
+
+Designed specifically for freelancer verification workflows
+
+Created a scalable backend with a modern frontend interface
+
+🔮 Next Steps
+Expand AI support for additional document types
+
+Add authentication and role-based access
+
+Improve AI processing speed and accuracy
+
+Deploy backend and frontend for public demo access
+
+📄 License
+This repository is view-only.
+All rights reserved by Jemima Silaen, Vriti Dahiya, Sansita Malhotra.
+
+No copying, redistribution, or derivative works are permitted without 
+prior written consent.
+See the LICENSE file for details.
