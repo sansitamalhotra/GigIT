@@ -63,51 +63,30 @@ GigIT was created to:
 
 ## 🧪 How to Run Locally
 
-### 1️⃣ Clone the repository
-```bash
+1️⃣ Clone the repository
 git clone https://github.com/sansitamalhotra/GigIT.git
 cd GigIT
 2️⃣ Run the Backend
-bash
-Copy code
 cd backend
 python3 -m venv venv
 source venv/bin/activate
-pip install fastapi uvicorn python-multipart python-dotenv pillow PyPDF2 
-google-generativeai
+pip install fastapi uvicorn python-multipart python-dotenv pillow PyPDF2 google-generativeai
 Create a local .env file (this is not committed):
-
-bash
-Copy code
 touch app/.env
 Example .env:
-
 env
-Copy code
 GEMINI_API_KEY=""
+
 Start the server:
-
-bash
-Copy code
 uvicorn app.main:app --reload
-Open API docs:
+Open API docs: http://127.0.0.1:8000/docs
 
-arduino
-Copy code
-http://127.0.0.1:8000/docs
 3️⃣ Run the Frontend
 Open a new terminal:
-
-bash
-Copy code
 cd frontend
 npm install
 npm start
-Frontend runs at:
-
-arduino
-Copy code
-http://localhost:3000
+Frontend runs at: http://localhost:3000
 The frontend can run independently using mock data if no API key is 
 provided.
 
