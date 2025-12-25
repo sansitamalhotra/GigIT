@@ -23,16 +23,16 @@
 <div align="center">
 
 ### 🏠 Landing Page
-![Landing Page](screenshots/landing.png)
+![Landing Page](screenshots/landing.jpg)
 
 ### 📄 Application Flow
-![Application](screenshots/application.png)
+![Application](screenshots/application.jpg)
 
 ### 🔐 Bank Partner Login
-![Bank Login](screenshots/bank-login.png)
+![Bank Login](screenshots/bank-login.jpg)
 
 ### ⚙️ Risk Configuration
-![Risk Configuration](screenshots/risk-config.png)
+![Risk Configuration](screenshots/risk-config.jpg)
 
 </div>
 
@@ -171,10 +171,10 @@ GigIT/
 │   │   ├── services/
 │   │   └── test_data/
 ├── screenshots/
-│   ├── landing.png
-│   ├── application.png
-│   ├── bank-login.png
-│   └── risk-config.png
+│   ├── landing.jpg
+│   ├── application.jpg
+│   ├── bank-login.jpg
+│   └── risk-config.jpg
 ├── Mock Dataset/
 ├── README.md
 └── LICENSE
